@@ -8,9 +8,9 @@ import { Subject, takeUntil } from 'rxjs';
 })
 export class BaseClockComponent implements OnInit, OnDestroy {
   protected destroy$ = new Subject<void>();
-  protected second = 0;
-  protected hour = 0;
-  protected minute = 0;
+  protected second: any = 0;
+  protected hour: any = 0;
+  protected minute: any = 0;
   protected d: any;
 
   constructor(protected clockService: ClockService) { }
