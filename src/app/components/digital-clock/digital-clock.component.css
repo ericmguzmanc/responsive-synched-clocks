@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+  font-size: 40px;
+  background-color: var(--lightBlue);
+  color: var(--golden);
+  border: 2px solid var(--darkBlue);
+  box-shadow: 5px 5px 10px grey;
+  border-radius: 10px
+}
+
+.hour, .minute, .second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 65px;
+}
+
+span {
+  color: var(--darkBlue);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin-left: 10px;
+    min-width: 280px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    margin-left: 0px;
+  }
+}
+

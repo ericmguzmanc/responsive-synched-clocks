@@ -1,0 +1,29 @@
+
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <div class="header-container">
+        <span class="title">Synched Clocks 🕰️</span>
+        <button type="button" class="btn btn-secondary" (click)="resetClocks()">Reset Clocks</button>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-6 clock-wrapper">
+          <app-analog-clock></app-analog-clock>
+        </div>
+        <div class="col-md-6 clock-wrapper">
+          <app-digital-clock></app-digital-clock>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer text-body-secondary">
+      <div class="settings">
+        <app-clock-setting [settingType]="settingType.HOURS"></app-clock-setting>
+        <app-clock-setting [settingType]="settingType.MINUTES"></app-clock-setting>
+        <app-clock-setting [settingType]="settingType.SECONDS"></app-clock-setting>
+      </div>
+    </div>
+  </div>
+
+</div>
